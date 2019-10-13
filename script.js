@@ -103,10 +103,10 @@ door3.onclick=()=>{
       currentlyplaying=false;
 
     }
-startButton.onclick=()=>{
-  startround();
-}
-function startround()
+
+ 
+
+const startround=()=>
 {
   console.log('in startround');
   if(currentlyplaying!==true)
@@ -121,3 +121,5 @@ function startround()
   }
 
 }
+
+startButton.onclick=startround;
